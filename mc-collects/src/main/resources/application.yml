@@ -1,0 +1,32 @@
+
+server:
+  port: 8090
+spring:
+  application:
+    name: collects-service
+  datasource:
+    url: jdbc:mysql://192.168.0.135:3306/mceil?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+  redis:
+    host: 192.168.0.135
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 5
+  instance:
+    lease-renewal-interval-in-seconds: 5 # ÿ��5�뷢��һ������
+    lease-expiration-duration-in-seconds: 10 # 10�벻���;͹���
+    prefer-ip-address: true
+#    ip-address: 127.0.0.1
+#    instance-id: ${spring.application.name}.${server.port}
+mc:
+  jwt:
+    pubKeyPath: D:\\mall\\keykey\\rsa.pub # ��Կ��ַ
+    cookieName: MC_TOKEN
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

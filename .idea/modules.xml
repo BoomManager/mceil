@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mc-auth/mc-auth.iml" filepath="$PROJECT_DIR$/mc-auth/mc-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-auth/mc-auth-common/mc-auth-common.iml" filepath="$PROJECT_DIR$/mc-auth/mc-auth-common/mc-auth-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-auth/mc-auth-service/mc-auth-service.iml" filepath="$PROJECT_DIR$/mc-auth/mc-auth-service/mc-auth-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-cart/mc-cart.iml" filepath="$PROJECT_DIR$/mc-cart/mc-cart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-collects/mc-collects.iml" filepath="$PROJECT_DIR$/mc-collects/mc-collects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-common/mc-common.iml" filepath="$PROJECT_DIR$/mc-common/mc-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-excel/mc-excel.iml" filepath="$PROJECT_DIR$/mc-excel/mc-excel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-gateway/mc-gateway.iml" filepath="$PROJECT_DIR$/mc-gateway/mc-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-item/mc-item.iml" filepath="$PROJECT_DIR$/mc-item/mc-item.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-item/mc-item-interface/mc-item-interface.iml" filepath="$PROJECT_DIR$/mc-item/mc-item-interface/mc-item-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-item/mc-item-service/mc-item-service.iml" filepath="$PROJECT_DIR$/mc-item/mc-item-service/mc-item-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-order/mc-order.iml" filepath="$PROJECT_DIR$/mc-order/mc-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-register/mc-register.iml" filepath="$PROJECT_DIR$/mc-register/mc-register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-registry/mc-registry.iml" filepath="$PROJECT_DIR$/mc-registry/mc-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-search/mc-search.iml" filepath="$PROJECT_DIR$/mc-search/mc-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-sms/mc-sms.iml" filepath="$PROJECT_DIR$/mc-sms/mc-sms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-upload/mc-upload.iml" filepath="$PROJECT_DIR$/mc-upload/mc-upload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-user/mc-user.iml" filepath="$PROJECT_DIR$/mc-user/mc-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-user/mc-user-interface/mc-user-interface.iml" filepath="$PROJECT_DIR$/mc-user/mc-user-interface/mc-user-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-user/mc-user-service/mc-user-service.iml" filepath="$PROJECT_DIR$/mc-user/mc-user-service/mc-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mceil.iml" filepath="$PROJECT_DIR$/mceil.iml" />
+    </modules>
+  </component>
+</project>

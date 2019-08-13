@@ -1,0 +1,21 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: sms-service
+  rabbitmq:
+    host: 192.168.0.135
+    username: mceil
+    password: mceil
+    virtual-host: /mceil
+  redis:
+    host: 192.168.0.135
+mc:
+  sms:
+    accessKeyId: LTAIr6iHiVZa9sc6
+    #阿里短信密钥
+    accessKeySecret: Ae3ahqde1WposLgZioA9jGjB2AznW9
+    #短信签名
+    signName: 深圳市灵犀谷科技有限公司
+    #短信模板
+    templateCode: SMS_166870096

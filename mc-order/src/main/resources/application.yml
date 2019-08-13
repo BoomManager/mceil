@@ -1,0 +1,62 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: order-service
+  rabbitmq:
+    host: 192.168.0.135
+    username: mceil
+    password: mceil
+    virtual-host: /mceil
+    template:
+      retry:
+        enabled: true
+        initial-interval: 10000ms
+        max-interval: 30000ms
+        multiplier: 2
+      exchange: mc.cart.exchange
+    publisher-confirms: true
+  datasource:
+    url: jdbc:mysql://192.168.0.135:3306/mceil?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jackson:
+    default-property-inclusion: non_null
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 5
+  instance:
+    ip-address: 127.0.0.1
+    prefer-ip-address: true
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+mc:
+  jwt:
+    pubKeyPath: D:/mall/keykey/rsa.pub # 公钥地址
+    cookieName: MC_TOKEN
+  worker:
+    workerId: 1
+    dataCenterId: 1
+  pay:
+    appID: wx8397f8696b538317
+    mchID: 1473426802
+    key: T6m9iK73b0kn9g5v426MKfHQH7X8rKwb
+    httpConnectTimeoutMs: 1000
+    httpReadTimeoutMs: 8000
+    notifyUrl: http://tyuts5.natappfree.cc/notify/pay
+  ali:
+    alipay_url: https://openapi.alipay.com/gateway.do
+    #app的id
+    app_id: 2019053165415860
+    #私钥
+    app_private_key: MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCUzWeXCvtkcPGkSrfFjE7g0FrlZlAWoXK2uGydpJrPw1Ik6W4/mdJSa/gFEHk2shEz2BZnaH8dsjLOWRL1vSERHHIDPPyposMoOl7SfAhrgvKelMfQSXqw7B057X7NetA1qfPJoPHMpoKew2kvNs7PLBLCSegWMuNjPSSCEkhAqs6Z+2olknenLcQQnTB/Q6rwcgYLo5ThZ9hws2Ol2L/xaaWiy+mekJsSMcG6uJh56lVx4o2DNpmfu7SRfxoqnu/W4XoTvnxQSr+oA8v4ldjAgz9x1IA5ohvAP5dxVy1GN41lXhPiwEUx7uwqgBMyN68hHqknt6nGBNuychu8aZutAgMBAAECggEASWmRWu57GpGyVdjbE6ZmX/nLbnPsvU2Ht+gDBj9odWoqw7U6xDwSjMFhyrXW54owfIB2hSwD0tXQxQcjGIPnpXaANWLIULTRTa6Gi5fP26LuKhjC/9rQoirLPIIUVjHqOR+Q+//ga5QWy1cjNLz4iTN4ScyGqTUQBCztLxLv/J7HvVf68QN9iG32QyMTuctfKUSwiPvwCaFCoxBXqf++POr6605J6RcWgxAEMQQ0WGJQzauVDcRKnWuxBoaFmdIfgmGMzPNA48rQBGKRMIIb1/zeWsUHh7j4cpWRr0D1Pu1QNmLpsc0Zbw5Ntdt+mAtwXJn1zLtIPB7Job2CbQ424QKBgQDKIRR7xqEGM+qGWAm9BR1Sq02XlRHxKrrjCbWfxpMAtpeIjrmZy/IxpNgIFyKGNYLWUN2a+h/MZ85HNVgrksuxtT+jzdtJeWSyVxY+hU9nd6uWjoI6aE8FFl70JZ0h9u7ypsmqovYgTGIsLXYjtONxBmfNmoMGYJwhh0Q3yWjOlQKBgQC8de1huPiIc5dePOJqGo1EIWtTypQyXFFJU42/vIjg5eskdpi6MVpc9rFrJsknJCqd23nWVImETrhF01z3+wr65BylRFfXkJ3MJQ1GGqiwd15Z8cKS3aoFw1UclkghLdXQW2EIe4F/i0yQUrq9ci5KUB+5INYwfBW+p12l6xCKuQKBgGpEH/e/ArM3IiqFKIGGqdbnlsCFr8wh0eVBGoqopGpwlJRHrQ5NacRtzOHb/9udUG8KTqeGrqcRQCKxyewGni6MgqvEs3AacTVNkbVG8usLwFtECvVYF4suKrei+sx7fT53L3kVed6bKdXeBMla9WRboME4ZYA51HvQGK5XplFNAoGAPfbYMgVLUjIPVuDV4OUSBZCnZUl6KITKBT3/oUcwCiIOilKkLLQFbgN+miiKguAVUwnSqXHqNSJc3Dh+nNph5dQSxxQNfccC2xhjoOUrCbp1v0UKIJfZS0PKPDf9R0t2vacN5GgXUARRDDLnS1q7dZuakpgFVLO3wpPs6py7N6ECgYEAsrZ0J7Rik2pOh7eAq4MtVlQWoiJr3I33eqkzOLYxuHhjknOD8jussHx9Okda5y7hdA3b1o8gba/0ffMxqtuH7ZXhoTz4JAnnNrjpAlp8N7kdWfc0NTfEAkkWDX9YD4MyBNb0VQpb9utfLaHaNsKdVkteOxOjJkS8vtbcMrEWEkI=
+    #公钥
+    alipay_public_key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlM1nlwr7ZHDxpEq3xYxO4NBa5WZQFqFytrhsnaSaz8NSJOluP5nSUmv4BRB5NrIRM9gWZ2h/HbIyzlkS9b0hERxyAzz8qaLDKDpe0nwIa4LynpTH0El6sOwdOe1+zXrQNanzyaDxzKaCnsNpLzbOzywSwknoFjLjYz0kghJIQKrOmftqJZJ3py3EEJ0wf0Oq8HIGC6OU4WfYcLNjpdi/8WmlosvpnpCbEjHBuriYeepVceKNgzaZn7u0kX8aKp7v1uF6E758UEq/qAPL+JXYwIM/cdSAOaIbwD+XcVctRjeNZV4T4sBFMe7sKoATMjevIR6pJ7epxgTbsnIbvGmbrQIDAQAB
+    #回调地址
+    return_payment_url: http://192.168.0.106:8089/ali/pay/callback/return
+    #异步回调地址需要外网可以访问
+    notify_payment_url:

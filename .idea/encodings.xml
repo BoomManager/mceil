@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-auth/mc-auth-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-auth/mc-auth-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-cart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-collects" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-coupon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-coupon/mc-coupon-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-coupon/mc-coupon-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-excel" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-excel" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-excel/mc-excel-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-excel/mc-excel-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-item" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-item/mc-item-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-item/mc-item-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-register" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-sms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-upload" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-user/mc-user-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mc-user/mc-user-service" charset="UTF-8" />
+  </component>
+</project>

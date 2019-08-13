@@ -1,0 +1,88 @@
+package com.mceil.common.enums;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public enum ExceptionEnum {
+//    PRICE_CANNOT_BE_NULL(400,"价格不能为空"),
+
+    INVALID_PARAM(404,"无效参数"),
+    BRAND_NOT_FOUND(404, "品牌不存在"),
+    BRAND_SAVE_ERROR(500, "新增品牌失败"),
+    BRAND_UPDATE_ERROR(500, "商品修改失败"),
+    BRAND_DELETE_ERROR(500, "商品删除失败"),
+
+    SPEC_GROUP_NOT_FOUND(404, "商品规格组没查到"),
+    SPEC_GROUP_ADD_ERROR(500, "商品规格组新增失败"),
+    SPEC_GROUP_UPDATE_ERROR(500, "商品规格组更新失败"),
+    SPEC_GROUP_DELETE_ERROR(500, "商品规格组删除失败"),
+    SPEC_PARAM_NOT_FOUND(404, "商品规格参数没查到"),
+    SPEC_PARAM_ADD_ERROR(500, "商品规格参数新增失败"),
+    SPEC_PARAM_UPDATE_ERROR(500, "商品规格参数更新失败"),
+    SPEC_PARAM_DELETE_ERROR(500, "商品规格参数删除失败"),
+
+    GOODS_NOT_FOUND(404, "商品不存在"),
+    GOODS_DETAIL_NOT_FOUND(404, "商品详情不存在"),
+    GOODS_SKU_NOT_FOUND(404, "商品SKU不存在"),
+    GOODS_STOCK_NOT_FOUND(404, "商品库存不存在"),
+    GOODS_STOCK_DELETE_ERROR(500, "商品库存失败"),
+    GOODS_SAVE_ERROR(500, "新增商品失败"),
+    GOODS_UPDATE_ERROR(500, "更新商品失败"),
+    GOODS_ID_CANNOT_BE_NULL(400, "商品id不能为空"),
+    GOOD_USER_ERROR(500, "厂家商品新增失败"),
+
+    CATEGORY_NOT_FOND(404, "商品分类沒查到"),
+    CATEGORY_BRAND_SAVE_ERROR(500, "新增品牌分类中间表失败"),
+
+    UPLOAD_FILE_ERROR(500, "文件上传失败"),
+    INVALID_FILE_TYPE(400, "无效文件类型"),
+
+    CART_NOT_FOUND(404, "购物车为空"),
+    STOCK_NOT_ENOUGH(500, "库存不足"),
+
+    ORDER_NOT_FOUND(404, "订单不存在"),
+    ORDER_DETAIL_NOT_FOUND(404, "订单详情不存在"),
+    ORDER_STATUS_NOT_FOUND(404, "订单状态不存在"),
+    ORDER_CREATE_ERROR(500, "订单创建失败"),
+    ORDER_STATUS_ERROR(400, "无效的订单状态"),
+
+    WX_PAY_ORDER_FAIL(500, "微信下单失败"),
+    INVALID_SIGN_ERROR(400, "无效的签名异常"),
+    INVALID_ORDER_PARAM(400, "订单参数异常"),
+    UPDATE_ORDER_STATUS_ERROR(500, "更新订单状态异常"),
+
+    USER_NOT_FOUND(500, "查询用户失败"),
+    USER_UPDATE_ROLE_ERROR(500, "更新用户权限失败"),
+    PHONE_ISUSED(403, "手机号码已被注册"),
+    INVALID_USER_DATA_TYPE(400, "无效的用户数据类型"),
+    INVALID_VERIFY_CODE(400, "无效的验证码"),
+    INVALID_USERNAME_PASSWORD(400, "用户名或者密码错误"),
+    CREATE_TOKEN_ERROR(500, "用户凭证生成失败"),
+    UNAUTHORIZED(403, "未授权"),
+
+    ADRESS_SAVE_ERROR(500, "地址新增失败"),
+    ADRESS_UPDATE_ERROR(500, "地址更新失败"),
+
+    TENDER_NO_FOUND(404, "招标信息未找到"),
+    TENDER_UPDATE_ERROR(500, "招标信息更新失败"),
+    TENDER_SAVE_ERROR(500, "招标信息保存失败"),
+    BID_NO_FOUND(404, "投标信息未找到"),
+    BID_SAVE_ERROR(500, "投标信息保存失败"),
+
+    //优惠券
+    COUPON_NOT_EXIST(404, "优惠券不存在"),
+    COUPON_BE_TAKEN_OVER(404, "优惠券已经领完了"),
+    COUPON_NOT_TIME(403, "还没到优惠券领取时间"),
+    COUPON_TIME_EXPIRED(403, "已过优惠券领取截止日期"),
+    COUPON_WAS_RECEIVED(403, "您已经领取过该优惠券");
+
+
+
+
+    private int code;
+    private String msg;
+}

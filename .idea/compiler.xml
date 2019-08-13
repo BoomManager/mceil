@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mc-auth-common" />
+        <module name="mc-auth-service" />
+        <module name="mc-cart" />
+        <module name="mc-collects" />
+        <module name="mc-common" />
+        <module name="mc-excel" />
+        <module name="mc-gateway" />
+        <module name="mc-item-interface" />
+        <module name="mc-item-service" />
+        <module name="mc-order" />
+        <module name="mc-register" />
+        <module name="mc-search" />
+        <module name="mc-sms" />
+        <module name="mc-upload" />
+        <module name="mc-user-interface" />
+        <module name="mc-user-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mc-auth" target="1.8" />
+      <module name="mc-auth-common" target="1.8" />
+      <module name="mc-auth-service" target="1.8" />
+      <module name="mc-bid" target="1.8" />
+      <module name="mc-cart" target="1.8" />
+      <module name="mc-collects" target="1.8" />
+      <module name="mc-common" target="1.8" />
+      <module name="mc-coupon" target="1.8" />
+      <module name="mc-coupon-interface" target="1.8" />
+      <module name="mc-coupon-service" target="1.8" />
+      <module name="mc-excel" target="1.8" />
+      <module name="mc-excel-interface" target="1.8" />
+      <module name="mc-excel-service" target="1.8" />
+      <module name="mc-gateway" target="1.8" />
+      <module name="mc-item" target="1.8" />
+      <module name="mc-item-interface" target="1.8" />
+      <module name="mc-item-service" target="1.8" />
+      <module name="mc-order" target="1.8" />
+      <module name="mc-page" target="1.8" />
+      <module name="mc-register" target="1.8" />
+      <module name="mc-search" target="1.8" />
+      <module name="mc-sms" target="1.8" />
+      <module name="mc-upload" target="1.8" />
+      <module name="mc-user" target="1.8" />
+      <module name="mc-user-interface" target="1.8" />
+      <module name="mc-user-service" target="1.8" />
+      <module name="mceil" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mc-auth-common" options="-parameters" />
+      <module name="mc-auth-service" options="-parameters" />
+      <module name="mc-bid" options="-parameters" />
+      <module name="mc-cart" options="-parameters" />
+      <module name="mc-collects" options="-parameters" />
+      <module name="mc-common" options="-parameters" />
+      <module name="mc-coupon" options="-parameters" />
+      <module name="mc-coupon-interface" options="-parameters" />
+      <module name="mc-coupon-service" options="-parameters" />
+      <module name="mc-excel" options="-parameters" />
+      <module name="mc-excel-interface" options="-parameters" />
+      <module name="mc-excel-service" options="-parameters" />
+      <module name="mc-gateway" options="-parameters" />
+      <module name="mc-item-interface" options="-parameters" />
+      <module name="mc-item-service" options="-parameters" />
+      <module name="mc-order" options="-parameters" />
+      <module name="mc-page" options="-parameters" />
+      <module name="mc-register" options="-parameters" />
+      <module name="mc-search" options="-parameters" />
+      <module name="mc-sms" options="-parameters" />
+      <module name="mc-upload" options="-parameters" />
+      <module name="mc-user-interface" options="-parameters" />
+      <module name="mc-user-service" options="-parameters" />
+    </option>
+  </component>
+</project>
